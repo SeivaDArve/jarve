@@ -1,0 +1,15 @@
+# Title: Fisrt things to add to termux at the beggining, after installing it
+
+
+# Edit ~/.vimrc {
+"Comment Example
+
+" Assigning side numeration in Vim
+set number
+set relativenumber
+
+" Assigning the keyboard ";" to be equal to ":"
+noremap . :
+}
+
+# change username

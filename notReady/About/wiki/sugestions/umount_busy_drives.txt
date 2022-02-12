@@ -1,0 +1,11 @@
+Umounting busy partitions at the Terminal
+
+#how to umount busy partition:
+$ umount /dev/sdb1
+ERROR: target is busy
+
+#use this command instead:
+$ lsof | grep /dev/sdb1
+
+#Other example:
+$ lsof | grep /run/media/dv-fedora/83DB-10EA/

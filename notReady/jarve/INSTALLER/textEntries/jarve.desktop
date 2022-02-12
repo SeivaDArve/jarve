@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=0.1
+Name=Jarve
+Comment=jarve is supposed to be your config manager - but still in development
+Exec=/home/dv-fedora/Repositories/juicyDRYgeek-repo/all/images/INSTALL-jarve-icon/jarve-executable.sh
+Path=/home/dv-fedora/Repositories/juicyDRYgeek-repo/all/images/INSTALL-jarve-icon/
+Icon=/home/dv-fedora/Repositories/juicyDRYgeek-repo/all/images/icons/jarve-icon/jarve-icon.jpg
+Terminal=true
+Type=Application
+Categories=Application

@@ -1,0 +1,16 @@
+# Title: jarve help page
+# Description: If you open "~/.bashrc" you can see the location of "jv.sh" file. Follow it and open it. There, ALL this options will be listed and updated. This file, in the other hand, might be a little outdated. (Do you want to become a developer and colaborate?)
+
+# Instructions:
+-h | --help	
+	Displays this file
+	
+-h edit | --help edit
+	Opens this text file to edit in your vim editor
+
+-v | --version
+	Displays what version of jarve you are currently running
+
+...
+
+

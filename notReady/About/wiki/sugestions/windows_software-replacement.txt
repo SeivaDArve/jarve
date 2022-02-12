@@ -1,0 +1,12 @@
+This is a list of software in Linux that may replace your windows softwsre:
+
+Adobe InDesign - Scribus
+Adobe Illustrator - Ink Scape
+Adobe Premiere - Kdenlive
+Adobe Lightroom - Raw Therapee
+Adobe Photoshop - Gimp
+Font Maker - FontForge
+Music prodution - LMMS
+Sound recorder - Audacity
+3D sculpting - Blender
+2D animations - Synfig Studio

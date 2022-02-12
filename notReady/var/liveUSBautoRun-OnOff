@@ -1,0 +1,8 @@
+jarve will display an app icon at the apps menu, but that is if it is already installed
+
+In case you are using jarve portable (for persistent USBs) then you could give a variable telling ALWAYS that, by clicking jarve, jarve would look for a var to see if it definitly is a Live USB or not. If it is, it would run a few more commands without asking, setting up everything right.
+
+this is the first .sh to run, so it can be humble, not touching much, or it can see clearly that you NEED kali OS to config itself again tottaly - I am calling this the kali effect (or the 'var' created because of kaliUSB)
+
+List in this file, all keyCodes you want to imediatly run
+##0001#1B App

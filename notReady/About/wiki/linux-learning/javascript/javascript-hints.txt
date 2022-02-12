@@ -1,0 +1,15 @@
+In javascript, you can use only the console of your browser to navigate throw the web pages.
+
+Here are some curiosities on how to do a few things:
+
+//from you current webpage, navigate to any other webpage according to URL (if you know to URL by memory):
+window.location.href = 'http://www.youtube.com'
+
+//This is to press the "Go Back" button of your browser
+window.history.go(-1)
+
+//This is to create a simple alert at your browser
+alert('fgfgfvgbvmh')
+
+//Ctrl+Shift+k opens the console for javascript directly at firefox
+

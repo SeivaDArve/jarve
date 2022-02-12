@@ -1,0 +1,22 @@
+This file explains the "Node"
+
+--> Node is that this that has everything but is not in anyway heavy
+--> If you have acesse to Github.com/juicyDRYgeek-repo than you have everything everywhere (the node)
+--> Keep your focus on what the node is doing
+--> the node (the repo) as it all (installers + uninstallers + content)
+--> the node only offers (it is a folder to send)
+--> h.h folder only receives (it is a folder to receive)
+--> Termux is the remote control (to keep up with all activity)
+
+--> the node is placed either at Github.com or home.home (home.home is local node)
+
+Process:
+1- Locate Github repo
+2- send it to home.home and Termux
+	2.1- At Termux you record all future changes everywhere
+	2.2- At home.home each step is recorded at h.h
+3- from home.home, files will be deployed at ~/../h.h
+
+--> (home.home is usually a DATA partition formated at NTFS)
+	--> Windows partition + Linux partition + Data partition (home.home)
+	--< (h.h at Windows) + (h.h at Linux) + (Repo at home.home)

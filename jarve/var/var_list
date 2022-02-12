@@ -1,0 +1,26 @@
+# Title: Variable's List
+
+
+_version=0	# This variable only increments by +1 each time this file is modified, starting at 0 and going to infinite. It tells jarve if there is an update pending
+
+_addRemove_.bashrc=-1 	# This variable can be set to "-1", "0" or "1" to "remove", "ignore" or "add" the file ~/.bashrc, respectivly
+_addRemove_.vimrc=-1	# This variable can be set to "-1", "0" or "1" to "remove", "ignore" or "add" the file ~/.vimrc, respectivly
+_var_etc-install-location=~/.jarve/etc		# This variable is a string and can be set to the path where a folder or a file is stored
+_var_jarve-OnOff=on 	# This variable can be set to "on" or "off" if you want the command "jv" to work properly on the CLI
+_jarve_software_version=0	# This var sits at "0" before the fist jarve version is released. When jarve is finally released with Feature1 (install/uninstall tool and "--help" flag for documentation) then, the version of jarve will increment by +1
+_jarve_current_development_focus="installing jarve correctly with alias and vimrc ONLY"	# This variable is a string to be simply printed at the user. It tells the user what task is beeing debuged or developed. If several developeres (2 or more) start developing this app (jarve) then this variable becomes an array in which each parameter is a string that tells who is developing what
+_var_appsToInstall_ReadChangeInstallOrIgnore=readOnly
+
+
+# List of all users (soon it will be presented as an array):
+# _usr-count=jarve;Dv;Mariane;Joseph
+_var_currentUSR=Dv 	# This var reads the name of the user to whom jarve is going to please, the name should be presented at an array of possible users
+
+
+# List of bugs (presented as an array soon)
+# _bugs-list="this happened";"that happened"
+#!/bin/bash
+# Description: This file is meant to hold a variable that tells jv where the folder "jarve-ConfigManager" from github.com was copied to. 
+
+_jarve-ConfigManager-parentFolderLocation=0 	# This variable can be set to "0" or to "$(path)" to tell the last location where jarve repo was found. Example: If you went to github.com and found a repository called "jarve-ConfigManager" and at your Linux terminal you cloned that repo, then, when you install ./jarve-ConfigManager/jarveInstallUninstall/jarve.linux.sh, it will store a variable to tell what is the parent folder of ./jarve-ConfigManager.
+# Use: This variable is only usefull after installing jarve. After installing jarve you can run: "jv --repo-home" in order to "cd" into it and keep developing it. (Yes, jarve is still under development:)

@@ -1,0 +1,43 @@
+You need to install python first
+$ sudo dnf install python
+
+then install youtube-dl:
+$ sudo dnf install youtube-dl
+
+Then go to your browser and choose a video, copy it's link and execute youtube-dl with the flag -F to display available formats:
+$ youtube-dl -F https://www.youtube.com/watch?v=tlZO7G-D0mg
+
+A list of format codes will appear:
+{
+	[youtube] tlZO7G-D0mg: Downloading webpage
+	[info] Available formats for tlZO7G-D0mg:
+	format code  extension  resolution note
+	249          webm       audio only tiny   56k , webm_dash container, opus @ 56k (48000Hz), 2.14MiB
+	250          webm       audio only tiny   74k , webm_dash container, opus @ 74k (48000Hz), 2.81MiB
+	140          m4a        audio only tiny  129k , m4a_dash container, mp4a.40.2@129k (44100Hz), 4.87MiB
+	251          webm       audio only tiny  145k , webm_dash container, opus @145k (48000Hz), 5.48MiB
+	160          mp4        144x144    144p   10k , mp4_dash container, avc1.4d400b@  10k, 25fps, video only, 413.24KiB
+	278          webm       144x144    144p   17k , webm_dash container, vp9@  17k, 25fps, video only, 687.52KiB
+	394          mp4        144x144    144p   28k , mp4_dash container, av01.0.00M.08@  28k, 25fps, video only, 1.08MiB
+	133          mp4        240x240    240p   17k , mp4_dash container, avc1.4d400c@  17k, 25fps, video only, 682.05KiB
+	242          webm       240x240    240p   38k , webm_dash container, vp9@  38k, 25fps, video only, 1.45MiB
+	395          mp4        240x240    240p   56k , mp4_dash container, av01.0.00M.08@  56k, 25fps, video only, 2.11MiB
+	134          mp4        360x360    360p   30k , mp4_dash container, avc1.4d4015@  30k, 25fps, video only, 1.15MiB
+	396          mp4        360x360    360p   91k , mp4_dash container, av01.0.00M.08@  91k, 25fps, video only, 3.45MiB
+	243          webm       360x360    360p   94k , webm_dash container, vp9@  94k, 25fps, video only, 3.54MiB
+	135          mp4        480x480    480p   46k , mp4_dash container, avc1.4d401e@  46k, 25fps, video only, 1.76MiB
+	397          mp4        480x480    480p  153k , mp4_dash container, av01.0.01M.08@ 153k, 25fps, video only, 5.77MiB
+	244          webm       480x480    480p  164k , webm_dash container, vp9@ 164k, 25fps, video only, 6.16MiB
+	136          mp4        720x720    720p   70k , mp4_dash container, avc1.4d401f@  70k, 25fps, video only, 2.65MiB
+	398          mp4        720x720    720p  308k , mp4_dash container, av01.0.04M.08@ 308k, 25fps, video only, 11.60MiB
+	247          webm       720x720    720p  318k , webm_dash container, vp9@ 318k, 25fps, video only, 11.96MiB
+	137          mp4        1080x1080  1080p  200k , mp4_dash container, avc1.640020@ 200k, 25fps, video only, 7.52MiB
+	248          webm       1080x1080  1080p  517k , webm_dash container, vp9@ 517k, 25fps, video only, 19.44MiB
+	399          mp4        1080x1080  1080p  539k , mp4_dash container, av01.0.08M.08@ 539k, 25fps, video only, 20.29MiB
+	18           mp4        360x360    360p  177k , avc1.42001E, 25fps, mp4a.40.2 (44100Hz), 6.67MiB (best)
+}
+
+Then choose the format code and execute:
+$ youtube-dl -f 18 https://www.youtube.com/watch?v=tlZO7G-D0mg
+
+The downloaded folder is whatever your current folder is

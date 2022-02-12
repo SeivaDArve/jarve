@@ -1,0 +1,9 @@
+To see the if the last bash program had errors
+run:
+$ echo $?
+
+To search more about this, look for
+"difference of exit 0 to exit 1"
+on youtube
+
+if [ echo $? = 0 ] then the program was silucessfull

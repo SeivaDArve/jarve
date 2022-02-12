@@ -1,0 +1,4 @@
+-> when using git, it will not push empty directories.
+-> in order to push "empty" folders, you have to create some random empty file inside it
+
+So, the "convention" that git useres came up with was to name that empty file inside that empty folder as .gitkeep

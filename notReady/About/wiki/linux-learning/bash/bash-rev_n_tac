@@ -1,0 +1,7 @@
+  998  rev
+  999  man rev
+ 1000  man tac
+ 1001  history
+
+In bash, there are 2 commands 'rev' and 'tac' that might be used to reverse the order of text in a file
+This might be useful to use in encription

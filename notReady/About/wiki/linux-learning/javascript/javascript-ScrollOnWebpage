@@ -1,0 +1,10 @@
+Even with Pop-Up blocker, websites contain javascript that block your screen and make you agree with something
+
+to avoit that:
+1. Right click > Inspect
+2. Delete properties that are blocking your view
+
+Scrolling is disabled? 
+3. Go to the console and type: document.body.style.overflow = "auto"
+
+Happy scolling;)

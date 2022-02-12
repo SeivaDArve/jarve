@@ -1,0 +1,38 @@
+#!/bin/bash
+# Title: Jarve redirecting to user 1st setup 
+# Description: It simply redirects you to your respective saved 1st-Setup
+
+
+# How to organize usr-etc
+# 1. Username
+# 2. OS type
+# 3. Shell
+# Example: Dv-Termux-bash
+
+
+# Finding the correct file to source:
+# if [ _OSTYPE=Termux + user=Dv ] then
+	load 1st-Dv-Termux
+# fi
+
+
+
+
+
+
+
+
+# Other idea (merge both)
+#!/bin/bash
+
+_OS=$(OSTYPE)
+_ME=$whoami
+_SHELL=$SHELL
+
+# This is the very first alias file that ~/.bashrc is going to read. configure this one to redirect to your username amd your shell
+
+# if [ _OS + _ME + _SHELL = _UNKNOWN ] then
+	load jarve standard alias and configs
+
+# if [ _OS + _ME + _SHELL = _SOME_USER ] then
+	load user configs - jarve configs

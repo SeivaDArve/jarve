@@ -1,0 +1,16 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# This command will draw a horizontal line with the size of the terminal window using the COLUMNS variable
+
+cat
+printf %"$COLUMNS"s |tr " " "-"
+
+
+
+
+
+
+read -p "press ENTER"
+# You can also use seq but it is not as intuitive as the previoys one
+
+seq -s- 56|tr -d '[:digit:]'

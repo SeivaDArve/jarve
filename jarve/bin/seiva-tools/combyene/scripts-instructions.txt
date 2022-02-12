@@ -1,0 +1,12 @@
+# To add to the combyene unlocker:
+mkdir unlocked; cd unlocked; unzip ../SEGREDO.jpg; op . 
+
+# To add to the combyene locker:
+zip -r resultado.zip pasta
+
+# To actually combine things the combyene way:
+# Note: the .jpg file should come first, then the zipped folder to merge
+cat teste.jpg resultado.zip > SEGREDO.jpg
+
+# To zip with password:
+zip --password 123456 chooseNewFileName.zip dataToProtect.jpg

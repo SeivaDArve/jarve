@@ -1,0 +1,6 @@
+by running jarve, this is used to detect if we are running a persistent volume or not, thus, running a few more commands
+
+Fir exemplo, this var will be: 
+$ On @ h.h @ persistent @ live USB
+or:
+$ Off @ h.h @ persistent @ live USB

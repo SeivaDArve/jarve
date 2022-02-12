@@ -1,0 +1,2 @@
+# This is a way to store $(pwd) into $PWD
+PWD=`pwd`

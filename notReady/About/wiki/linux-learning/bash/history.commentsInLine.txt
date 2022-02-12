@@ -1,0 +1,7 @@
+ 1001  ls
+ 1002  ls #hdsas
+ 1003  history
+ 1004  .
+ 1005  op Jashn-E-Bahaaraa\ \(From\ \'Jodhaa\ Akbar\'\)-tlZO7G-D0mg.mp4 #In bash, you can comment your history by using hashtag inLine, so this op is an alias to open xdg-open to a file called Jashn-E-Bahaaraa... which is a video file with music
+ 1006  tail history
+ 1007  history | tail 

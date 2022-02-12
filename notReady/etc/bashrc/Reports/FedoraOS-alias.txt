@@ -1,0 +1,14 @@
+some alias are ment to happen only in fedora, like mounting and unmounting all other partitions of all other OS's
+
+mount all these
+sda10	(give mount point)	(alias to automatically navigate there like: "cd sda10")
+sda12	(give mount point)	(alias to automatically navigate there like: "cd sda12")
+sda14	(give mount point)	(alias to automatically navigate there like: "cd sda14")
+sda15	(give mount point)	(alias to automatically navigate there like: "cd sda15")
+SDA18	(give mount point)	(alias to automatically navigate there like: "djr-home")
+sda19	(give mount point)	(alias to automatically navigate there like: "cd sda19")
+sda4	(give mount point)	(alias to automatically navigate there like: "cd sda14")
+sda6	(give mount point)	(alias to automatically navigate there like: "cd sda16")
+sda9	(give mount point)	(alias to automatically navigate there like: "cd sda19")
+
+

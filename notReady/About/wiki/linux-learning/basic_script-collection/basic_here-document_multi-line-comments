@@ -1,0 +1,12 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+cat << blablabla
+aqui escrevo tudo o que
+eu
+quero
+
+e é imprimido no STDOUT
+
+> Este era o ficheiro
+-> basic_here_doc
+blablabla

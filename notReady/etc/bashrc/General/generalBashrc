@@ -1,0 +1,12 @@
+#!/bin/bash
+
+alias ls="ls --color"
+alias ll="ls -l"
+alias A="ls -A"
+alias h="cd ~ && ls"
+alias op="xdg-open"
+alias ct="cat"
+alias bs="bash"
+alias cl="clear"
+alias new="echo '#!/bin/bash' >> New.sh && chmod -v +x New.sh"
+

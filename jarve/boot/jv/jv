@@ -1,0 +1,193 @@
+#!/bin/bash
+
+# Read variables
+_op=$(xdg-open)
+# Define color codes as variables:
+# _color-1=...
+# _color-2=...
+# _color-3=...
+# _color-4=...
+# _color-5=...
+# _color-6=...
+# _color-7=...
+# _color-8=...
+# _color-9=...
+# _color-10=...
+
+
+# Arguments:
+# When "jv" is asked at the terminal
+# it expects argument. Type "jv -l" to list
+# all possibilities.
+# (examples: "jv -l", "jv --version"):
+case $1 in
+
+	"--faq")
+
+cat << faq-explanation
+
+Before running any command, redirect it to --faq to know what it does, it is a live assistant. Use it as a break pedal that tells you at what point you are (what your expression currently does) and where you may go (faq displays what arguments you could use next). --faq allows you to know that arguments you may add.
+--faq is help on-the-go instead of help as a document
+EXAMPLE:
+	jv -my_incomplete_command --faq (Enter)
+	jv -my_complete_command +option_given_by_faq
+
+faq-explanation
+	;;
+	# Give hint about how to complete an arg
+	-l)
+		# lists remaining options to "jv -*"
+		cat ../all/img/CLI/jarve-icon-description.txt
+		echo ""; echo "> Type \"jv -h\" for the full list"
+
+		case $2 in
+			--faq)
+				echo "This command lists"
+			;;
+
+			*)
+			;;
+
+	;;
+	# Display the version of jarve
+	# + features under development
+	# + future features (redirecting to var)
+	# + tells under which username it stores
+	-v | --version)
+		#source ../all/var/var_list
+		echo $_jarve_software_version
+		echo ""
+		echo "System user: $(whoami)"
+		echo "at jarve you are writting at user: $(whoami)"
+		
+	;;
+
+	# Display jv instructions
+	-h | --help)
+		case $2 in 
+			edit)
+			vim ../all/wiki/all/sh/jv-help/helpPage.txt
+			;; 
+			*)
+			echo " "
+			cat ../all/wiki/all/sh/jv-help/helpPage.txt
+			;;
+		esac
+	;;
+
+
+	# Test to see if text is valid syntax
+	"--deb")
+		echo "can you see mee? Debugging feature"
+	;;
+
+	# Display ASCII based image of jarve
+	--icon)
+		case $2 in
+
+			-l)
+			# Give hint about how to complete an arg
+			# lists remaining options to "jv --icon*"
+			echo "-* | --description"
+			;;
+			--description)
+				clear
+				cat ../all/img/CLI/jarve-icon-description.txt
+			;;
+
+			*)
+				cat ../all/img/CLI/jarve-icon.txt
+			;;
+		esac
+	;;
+
+	# Travel to the repository for development
+	--repo)
+	cd $(_jv-repo-location)
+	;;
+
+	# Apply all variables and dump Trash
+	-r | --refreshAll)
+		# source
+		# -r bsrc: source ~/.bashrc
+		# -r tmp: run the rm-tmp.sh script
+		case $2 in
+			tmp)
+				../all/bin/1/rm-tmp.sh
+			;;
+			*)
+				echo "refresh what?"
+			;;
+		esac
+	;;
+
+	# Opens OFFLINE website made as a readme.md
+	--wiki)
+		echo "> trying to open index.html with the default linux command \"xdg-open\""
+		$(_op) ../all/wiki/index.html
+	;;
+
+	# Simple didatic example (ready to remove)
+	--test)
+		echo "what do you want to test? Red or Green?"
+		case $2 in 
+			red | Red | RED)
+				echo "you choose Red"
+			;;
+			*)
+				echo "you did not choose neither Red not Green"
+				echo "hint: it is case sensitive"
+			;;
+		esac
+	;;
+	--detectOS)
+		echo "jarve is detecting current OS and writting it on ~/.jarve/var/var_current-OS"
+	;;
+	--home)
+		echo "this is a simple alias that sends the terminal to the last place where the repository \"jarve-ConfigManager\" was seen"
+	;;
+	--install)
+		echo "if you are running this script, it means it is already installed"
+		echo "maybe you used a script called jarve-ConfigManager/jarveInstall.Uninstall/jarve.linux.sh"
+		echo "At this point, you can use --unistall to remove this jarve completly"
+		echo "OR you can navigate into that folder and ask jarve.linux.sh to Install, Re-install or Remove this software"
+		
+	;;
+	--uninstall)
+		echo "jarve will remove EVERY SINGLE THING of itself;)"
+	;;
+	--setJarvePocket\<path\>)
+		echo "please enter the full path where jarve can be granted acess to your private data (jarve does not record it, and keep safe by not telling your private data with nobody"
+		echo "this tool is meant to grant jarve for example with password management. Jarve does not remember your password, it simply acesses your external USB every time you need to use it. Jarve copies the password, uses it and in the end dumps it from the temporary files"
+		echo "this feature is not ready yet"
+	;;
+	--setJarvePocket=here)
+		echo "Navigate to the root folder of your USB that you want to set as the tmp jarvePocket and then type 'jv --setJarvePocket=here' to set it"
+	;;
+	--currentDevelopment)
+		echo "you asked jv to tell you which task (debugging or development) is currently beeing made by the team behind jarve. But this feature itself is not ready yet"
+	;;
+	--backup)
+		echo "this feature searches your machine to know if ANY backup was already made, and asks if you want to do one full backup"
+	;;
+	--bat)
+		echo "soon it will display battery status"
+	;;
+	--manpages)
+		# Check if bropages, cheat and tldr are installed in the machine alongside to man pages
+	;;
+	--describe)
+		# Pipes neofetch and cpufetch and uname and git global -l into a file called jv-describingMe
+	;;
+	--author)
+		echo ""
+		echo " < --- The Author of jarve is: Seiva D'Arve --- >"
+		echo " < ----- flowreshe.seiva.d.arve@gmil.com ------ >"
+		echo ""
+	;;
+	*)
+		echo "Jarve is ready, but no arguments were specified"
+	;;
+esac
+
+

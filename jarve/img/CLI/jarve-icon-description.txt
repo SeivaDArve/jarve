@@ -1,0 +1,25 @@
+
+   ||                                  
+  ...  ....   ... ..  .... ...   ....  
+   || '' .||   ||' ''  '|.  |  .|...|| 
+   || .|' ||   ||       '|.|   ||      
+   || '|..'|' .||.       '|     '|...' 
+.. |'               command in use: jv   
+ ''                                                                     
+<-------------- jarve --------------->
+# ----- cross platform script ------ # 
+
+1. Add a Username (like Dv), run as jv
+2. Run it as your username always
+3. If it is stable, merge it to jarve
+(Stable means: Comparing both users
+ and choosing to merge the best of
+ them. The result will run everywhere)
+
+Default Username: jarve
+
+DRY project: Don't Repeat Yourself
+Make jarve your Butler
+
+# ---------------------------------- #
+

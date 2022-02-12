@@ -1,0 +1,2 @@
+# Title: goto-generator 
+# Description: is a script that loads goto alias. it stores data comming from $pwd and puts it into "goto ...alias"

@@ -1,0 +1,94 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Title: Bash alias
+# Description: All choosen alias by the user Dv
+
+# List alias:
+
+alias jv="~/.jarve/jv.sh"
+
+alias .="ls"
+alias ..="cd .."
+alias ,="cd -"
+
+alias l='ls -l'
+alias 1="ls -1"
+alias a="ls -a"
+alias A="ls -A"
+
+alias cl='clear'
+
+h () {
+	clear
+	# "h" does the same as "cd" but it simply clears the screen and gives you a fresh view
+	cd ~
+	pwd
+	echo
+	ls
+}
+
+hh () {
+	clear
+	# if there is a data partition, home.home should be the adress to that
+	cd ~/home.home
+	pwd
+	echo
+	ls
+}
+
+addate ()
+{
+/data/data/com.termux/files/home/scripts.all/Shambavi/Extras/./add_Shambavi_new_date.sh
+
+tail -n 3 /data/data/com.termux/files/home/scripts.all/Shambavi/Extras/./shamb-dates.txt
+}
+
+addate0 ()
+{
+	echo "" >> ~/scripts.all/Shambavi/Extras/shamb-dates.txt
+	
+	tail -n 3 /data/data/com.termux/files/home/scripts.all/Shambavi/Extras/./shamb-dates.txt
+}
+
+vdate ()
+{
+less /data/data/com.termux/files/home/scripts.all/Shambavi/Extras/./shamb-dates.txt
+}
+
+hdj ()
+{
+	clear
+	cd /data/data/com.termux/files/home/home.home/Github/jarve-ConfigManager
+	pwd
+	echo
+	ls
+}
+
+djr ()
+{
+	clear
+	head -n 9 /data/data/com.termux/files/home/home.home/.h.h/.A/intro.Djarvis.sh
+}
+
+NewSh ()
+{
+	echo "#!"${which bash} >> New.sh
+	chmod -v +x ./New.sh
+}
+
+
+
+function op () 
+{
+
+	# I am usinf if statements, but I could use "case" instead of "if"
+	if _var-OSinstalled == windows ]; then; explorer.exe; fi
+	if _var-OSinstalled == Linux ]; then; xdg-open 2>/dev/null]; fi
+
+	# alias op="explorer.exe 2>/dev/null || xdg-open 2>/dev/null || termux-open || lf 2>/dev/null || echo 'could not open this time'"
+
+}
+
+# To satisfy the User as soon as the terminal is loaded
+# This message will only be displayed if this file "Bash Alias" is added as an entry to the file "~/.bashrc"
+echo "all alias from Dv are read" 

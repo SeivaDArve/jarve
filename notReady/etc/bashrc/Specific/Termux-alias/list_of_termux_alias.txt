@@ -1,0 +1,2 @@
+A	(la -A)	#List almost all
+an option at INSTALL.sh will be added to create this list also

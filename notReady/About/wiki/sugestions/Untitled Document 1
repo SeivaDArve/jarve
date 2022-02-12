@@ -1,0 +1,7 @@
+Open a folder in the File Manager through the command line
+
+If you are in the Ubuntu command line and want to open a specific folder in the UI File Manager, you can use one of the following two ways:
+
+$ nautilus /path/to/that/folder
+or
+$ xdg-open /path/to/the/folder

@@ -1,0 +1,3 @@
+ssh (secure shell)
+
+is a tool to remotely connect with servers (for exemple) or other devices (if you know the credentials)

@@ -1,0 +1,8 @@
+number:
+sms to act:
+
+lock doors:	-	-	-	"smsLOCK"
+unlock dors:	-	-	-	"smsUlock"
+open 1cm windows (hot days):	-	"1cm"
+close windows fully:	-	-	"CLOSE"
+

@@ -1,0 +1,7 @@
+This variable is needed to put under h.h to tell the OS about the location of some alias
+
+This specific variable is to make these alias always working properly:
+$ bashrc
+$ source
+
+and the RP folder (Repositories) is where "juicyDRYgeek-repo" is located

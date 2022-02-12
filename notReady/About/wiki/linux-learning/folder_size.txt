@@ -1,0 +1,2 @@
+To ask Bash about the size of a certain file or folder use:
+$ du -sh directory/

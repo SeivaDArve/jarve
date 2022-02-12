@@ -1,0 +1,12 @@
+in bash shell
+you can view all your variables with all these 3
+commands
+
+$ printenv
+$ env
+$ set
+$ export
+
+more info here:
+https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
+

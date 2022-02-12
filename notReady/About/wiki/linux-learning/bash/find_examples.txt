@@ -1,0 +1,12 @@
+Find command, examples:
+
+#This will FIND something in the tree of the directory "/home/user" with the "-name" containing something that has "dv" in it from the begging and end of it
+$ find /home/user -name *dv*
+
+#This will FIND documents or folders that was modified in a range of 2 days ago until now.
+$ find /home/user -mtime -2
+
+#This will FIND documents or folders that was modified exactly 3 days ago.
+$ find /home/user -mtime 3
+
+

@@ -1,0 +1,54 @@
+#!/bin/bash
+# Title: combyener: a program that hides compressed folders (by the extention .zip) inside innocent images (by the extention .jpg)
+# Description: 
+# Author: Seiva D'Arve
+
+refresh () {
+clear
+cat << menu
+
+comBYEne tool - beta
+
+#  Options:
+-----------
+q) exit app
+i) info
+
+1) Erase dir ./make-it-inside completly
+2) Erase ./make-it-inside/* and create new:
+   example.jpg + 'secret' folder + 'result' folder
+   ( This option is the fresh START )
+
+3) zip 'secret' folder only
+4) zip 'secret' folder only WITH password
+5) unzip 'secret' folder only
+6) unzip 'secret' folder only WITH password
+   ( These options are preparation )
+
+7) Combyene example.jpg + 'secret' folder
+   ( This option is to act )
+
+8) Rename the result of both inside 'result'
+menu
+
+cat << menu
+
+#  Tree of this folder .
+------------------------
+
+menu
+tree .
+}
+refresh
+
+echo ""
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>"
+read -p "Choose an option (1 to 8): " answer
+echo $answer
+
+if [ $answer = 1 ] 
+then
+	rm -rf ./make-it-inside
+	clear
+	refresh
+fi

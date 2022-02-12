@@ -1,0 +1,7 @@
+interestingNamesForKeywords
+
+# This is a list of alias that may be used
+
+- "ZzzQuit" (for exame to shutdown the machine doing all tasks that jarve supports, like checking updates and sending mail from windows to Linux to be automatically executed when Linux is turned on)
+
+- "abra-cadabra" (for example to execute all pending actions from ZzzQuit)

@@ -1,0 +1,1 @@
+create alias to "mkdir folder" + cd automatically to the last folder created (using last touched folder)

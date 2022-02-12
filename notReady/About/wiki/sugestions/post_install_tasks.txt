@@ -1,0 +1,6 @@
+List of tasks to do as soon as you boot your OS
+for the first time pist install
+
+- timeshift
+- list immediatly standard apps (current apps) post install. this way you can also use diff to tell all the apps in your OS manually added by you
+- backup you defaults - .bashrc fstab etc

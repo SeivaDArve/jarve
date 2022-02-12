@@ -1,0 +1,13 @@
+Vim numbers
+
+try
+:set number
+:set relativenumber
+
+
+
+
+
+
+
+

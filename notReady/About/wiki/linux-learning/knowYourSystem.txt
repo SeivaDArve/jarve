@@ -1,0 +1,18 @@
+know your system
+
+sudo fdisk -l
+similar to:
+lsblk
+blkid
+https://itsfoss.com/set-write-permission-ext4-partition-ubuntu-linux/
+
+last (command to view latest user logins)
+
+Ctrl-S_Crtl-Q_pauses_and_resumes_terminal_output
+
+dnf history userinstalled
+list all installed packages
+dnf list installed
+dnf search <patternOfProgramName>
+To browse the web directly from the terminal:
+$ lynx

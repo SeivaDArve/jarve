@@ -1,0 +1,36 @@
+#####	jarve	#####
+# version 0.1 ## SHELL=/bin/bash ## PATH=$PATH:/sbin:/bin #
+
+## Tabs --------------------------------------------------
+
+# key           Meaning
+# ------	-------
+# @ T1		live USB configs  
+# @ T2		Install jarve
+# @annually      (same as @yearly)
+# @monthly       Run once a month, "0 0 1 * *".  Jan-Dec
+# @weekly        Run once a week, "0 0 * * 0".     Sun-Sat
+# @daily         Run once a day, "0 0 * * *".
+# @midnight      (same as @daily)
+# @hourly        Run once an hour, "0 * * * *".
+# Inherited Vars: $LOGNAME, $SHELL, $HOME, $MAILTO
+# To install        cat crontab.template | crontab - 
+
+## Tabs --------------------------------------------------
+#                crontab -l (list) crontab -e (edit) crontab -r (delete)
+#mm     hh      DoM    Mon     Dow      COMMAND                
+#+.......................................Minute of the hour (0..59)
+#|      +--------------------------------Hour in the day (0..23)
+#|      |       +........................Day of month, 1..31 
+#|      |       |       +----------------Month (1.12) Jan, Feb.. Dec    
+#|      |       |       |       +........day of the week 0-6  7==0 or (sun,mon,tue,wed,thu,fri,sat)     
+#|      |       |       |       |        |command to be executed
+#V      V       V       V       V        V
+10      9       *       *       mon,thu  /usr/sbin/fstrim  -a #trim all SSDs every mon,thu @ 9:10am
+#
+0-30/5  */2  30-31      *       *        [ `date -d +'1 day' +\%d` -eq 1 ] && echo "$(date): RUN your month-end jobs today" >> ${HOME}/message #every 5 minutes for first half hour at month end
+0-30/5  */2  28-29      Feb  *        [ `date -d +'1 day' +\%d` -eq 1  ] && echo "$(date): RUN your month-end jobs today" >>  ${HOME}/message #every 5 minutes for first half hour at month end
+#
+#0-30/5 --every multiple of 5 minutes in the first half hour of each hour, 0-23/2 (*/2) every other hour( for preceding line) 
+1       *       2       *       *        rm ~/message                            #clean up
+@daily                                   /usr/bin/find $HOME -name core 2>/dev/null | xargs rm -f >/dev/null 2>&1[

@@ -1,0 +1,11 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+
+#if a function is well written, you should be able to writ it without && or ||
+
+func () {
+	ls
+	echo
+	}
+
+func

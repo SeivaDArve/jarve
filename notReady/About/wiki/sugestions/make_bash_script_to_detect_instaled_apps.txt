@@ -1,0 +1,19 @@
+when you are operating in some random OS
+somethimes you need to use some GUI apps.
+For example you are using POP OS and it does not have 
+Libre office installed. then, if you don´t want to use it right away without instaling
+then you need to search other OS's list of apps if any other OS has Libre office installed
+
+Lets say fedora has Libre office installed. Then
+you Djarves must find where Libre is installed, and memorize all windows that you have currently open
+with the name of the file that you are currently working with
+
+List of tasks for this script:
+- Find instaled apps on other partitions (even if they are not mounted)
+- see what progrmas are running right now in your current OS
+- see what are the files open in your current OS
+- see what youtube links (or browser links) are open right now
+- say when the list of memories are ready (so you can reboot)
+- after rebooting, Djarves comes up with all the apps open previously + web links open + the apps that you where ooking for
+- Djarves has to make sure the only time you spend, is the time of rebooting, everything else must open automatic.
+-include bookmarks (if any bookmark is new, replace the old for the new)

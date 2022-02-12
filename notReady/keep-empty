@@ -1,0 +1,25 @@
+Please do not use this folder to write code, keep it empty.
+
+Why?
+It is a reminder that it will be created as soon as you isntall your jarve.
+h.h is only displayed at jarve-ConfigManager to make you read this file.
+h.h is a folder that is created only when in use
+h.h will be created at you OS when for the first time you want to use jarve-ConfigManager
+h.h will contain ALL the changes made by "jv", so you can delete it and all software will be gone
+h.h will contain all the uninstallers and all subfolders like "var", "bin", "etc" etc,
+h.h (do not delete it immediatly, you may use the uninstallers first)
+
+jarve will detect:
+- Your current OS, what it needs and save thos configs to h.h
+- Your alias (cross platform personal alias) and save those configs to h.h
+
+Can jarve install everything at normal system folders like "/var", "/bin", "/etc"?
+- No, the developer is not compiling jarve for speed. Each file, each script can be read for both, for the machine and for the user at the same time.
+- Documentation is easier to make this way, there in each script, every command is commented and EXPLAINED;)
+- The first developer is new to Linux and is using this app as his first, learning bash (bash is everywhere, that is why, therefore bash can start installing other languages and MAKE THEM RUN TOO :D
+- jarve is made to dismiss the need for user repetition. All configs that the USER may need to repeat will sit at his home directory (that is why all jarve is installed at "/home" 
+
+> jarve is for educational pourpouses, therefore everything must be acessible at some place, that is why h.h
+You can configure jarve to run 100% or you can go on configuring it slow, step by step, and all those steps will appear at h.h
+
+Even temporary files will be stored here. there will be a ~/.bashrc clearing it and a ~/.bash_logout clearing it too

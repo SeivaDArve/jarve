@@ -1,0 +1,26 @@
+This file contains all current SeivaDArve repos
+
+SeivaDArve (profile)
+https://github.com/SeivaDArve/SeivaDArve.git
+
+juicyDRYgeek-repo
+https://github.com/SeivaDArve/juicyDRYgeek-repo.git
+
+key-juicyDRYgeek
+https://github.com/SeivaDArve/key-juicyDRYgeek
+
+Website-curriculum
+https://github.com/SeivaDArve/Website-Curriculum.git
+
+Yoga-Bash-App
+https://github.com/SeivaDArve/Yoga-Bash-App.git
+
+Browser-OnlineRadio
+https://github.com/SeivaDArve/Browser-RadioStation
+
+
+Unimatrix (fork)
+https://github.com/SeivaDArve/unimatrix.git
+
+Notes (fork)
+https://github.com/SeivaDArve/notes.git

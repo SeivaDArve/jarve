@@ -1,0 +1,8 @@
+List of configurations to make to any Gnome used by Dv (Dv means any user who happens to run JuicyDRYgeek-repo) - Dv is the default
+
+The creator of juicyDRYgeek-repo used Dv as his nickname (coming from David) - (David = Dv)
+
+1- At "Files" file explorer:
+	- set favourites
+2- At gnome-terminal
+	- set profile Dv

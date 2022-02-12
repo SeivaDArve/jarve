@@ -1,0 +1,13 @@
+Compare this file with current machine state and repirt properlly what HAS to be done
+
+# 1-Detecting all apps AND plug-ins
+# 2-Deciding what is standard to do at each 
+  {0-nothing; 1-install always; 2-remove always}
+# 3-Detecting if installed
+  {A-Installed; B-Not Installed}
+
+Install method: ( systemWide || h.h )
+ systemWide: /tmp /var /etc
+ locally: ~/../h.h
+On:locally
+

@@ -1,0 +1,10 @@
+
+sudo pacman -Syy
+sudo pacman -S neofetch cpufetch lf lolcat vscodium 
+
+# Add alias to fish shell:
+# Add alias; alias code="codium"; # To make it permanent; funcsave code
+$ alias     # it shows to the user the list of all alias
+# To see the costum alias dir: $ cd ~/.config/fish/functions && ls
+
+# Added "kite" and "Live Server" to VScodium 

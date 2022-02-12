@@ -1,0 +1,13 @@
+You can run several commands to tel you the current status of your machine
+
+just like:
+$ free -h	-	-	-	-	-	-	(free memory)
+$ vmstat	-	-	-	-	-	-	(CPU)
+$ upower -i /org/freedesktop/UPower/devices/battery_BAT0	(battery)
+$ sar (not working on fedora)	-	-	-	-	(CPU usage)
+
+and you can also see them live by the command 'watch' like:
+$ watch -n 1 "free -h; echo; echo; vmstat; echo; echo; upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+
+view all information about your memory:
+$ cat /proc/meminfo

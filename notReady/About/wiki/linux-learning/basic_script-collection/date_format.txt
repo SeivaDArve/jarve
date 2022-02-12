@@ -1,0 +1,5 @@
+To display only the current day of the weak, type:
+$ date +%a
+
+Display seconds from UNIX "1 Jan 1971"
+$ date +%s

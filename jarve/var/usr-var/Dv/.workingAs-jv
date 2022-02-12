@@ -1,0 +1,3 @@
+# Title ".workingAs-jv"
+- Description: jarve-ConfigManager may have many many tools. but they are STORED until called by a user."
+# Use: Store your own Pc defaults into your own User folder (at var/usr-var) so that jarve replaces his configs by yours

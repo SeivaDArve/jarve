@@ -1,0 +1,15 @@
+#!/bin/bash
+# Title: This is the file that sits at your ~
+
+
+#     ||                                  
+#    ...  ....   ... ..  .... ...   ....  
+#     || '' .||   ||' ''  '|.  |  .|...|| 
+#     || .|' ||   ||       '|.|   ||      
+#     || '|..'|' .||.       '|     '|...' 
+#  .. |'                                  
+#  ''                                    
+
+# Comment the next line to Toggle off
+# And unComment to Toggle On
+cat ../img/CLI/jarve-icon.txt

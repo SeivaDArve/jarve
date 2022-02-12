@@ -1,0 +1,10 @@
+[Desktop Entry]
+version=1.0
+Name=Sample Application
+Comment=Android Studio
+Exec=/home/sorin/android-studio/bin/studio.sh
+Path=/home/sorin/android-studio/bin/studio.sh
+Icon=/home/sorin/android-studio/bin/studio.png
+Terminal=false
+Type=Application
+Categories=Application

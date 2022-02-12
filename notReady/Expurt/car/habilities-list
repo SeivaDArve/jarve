@@ -1,0 +1,24 @@
+List of habilities this car can do that others don't
+
+#------------------------------------------------
+
+- Key: Arduino 'menu/drive/emergency/blink4'
+  //
+- Action:
+  // blink 4 direction indicators + sound horn (simultaneously)
+- Description:
+  // similar to alarm, but can drive like this"
+  // used to drive on health emergencies for example
+  // it only adds horn to the 4 blinkers
+- Dependencies:
+  //Arduino or RaspberryPi
+
+#------------------------------------------------
+
+- Key:
+  //
+- Action:
+  //
+- Description
+  //
+- Dependencies

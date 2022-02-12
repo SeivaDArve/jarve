@@ -1,0 +1,4 @@
+ 1078  bash open-html-jarve-instrucyions.sh 
+ 1079  ./open-html-jarve-instrucyions.sh 
+ 1080  #These are 2 ways to open/run files in your bash shell
+ 1081  history

@@ -1,0 +1,8 @@
+# Title: This file lists an array of apps that can may be added/removed by jv
+# description: jv may run this file in search of changes. If there is any change between this file and a previous .bak of this file, then jarve will delete the previous .bak and apply these changes to this machine. In the end after all changes match what the useer asked for, jv will take another snapshot to this file to be able to detect changes in the future. 
+# Use: Comment/Uncomment if you want to Remove/Add an existing listed app to the OS, the changes take place the next time you command jv to read this file and execute what is said in this file to happen
+
+
+# If you are using Windows:
+# There is a website www.ninite.com
+# It is a list of apps that you may get automatically installed

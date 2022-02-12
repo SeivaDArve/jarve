@@ -1,0 +1,10 @@
+# List of Partitions that are able to toggle On-Off at startup
+
+# First, detect wich OS you'r in and comment that on out
+# $ do
+
+# Partitions able to toggle:
+#windows
+fedora
+home.home
+#2home

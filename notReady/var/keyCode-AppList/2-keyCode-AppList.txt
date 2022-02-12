@@ -1,0 +1,4 @@
+Git:
+##0001#1 git config --global
+List:
+##0001#1B powerline
