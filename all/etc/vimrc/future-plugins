@@ -1,0 +1,5 @@
+# Title: Note of things to add to vim
+
+# Plugins:
+Plug 'morehetz/gruvbox'
+
