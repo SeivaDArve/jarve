@@ -1,11 +1,11 @@
-# jarve-ConfigManager (by Seiva D'Arve)
+# jarve (by Seiva D'Arve)
 
 Dv applying DRY results in Jarve: a Butler
 Call for jv in the terminal an see what he Replies
 
 He talks the Lachine-Manguage
 
-A perfect tringle: ***jarve-ConfigManager*** + ***jarve-Wiki*** + ***jarve-Pocket***
+A perfect tringle: ***jarve*** + ***jarve-Wiki*** + ***jarve-Pocket***
 
 ## jarve-Wiki 
 #### Ask jarve for instructions
@@ -17,9 +17,9 @@ This section recriates Jarve itself somewhere else
 An Off On
 An offline-always folder, or partition, or external USB, or external hard drive that can be mounted/unmounted into jarve. Jarve is ao OPEN source software, it it available for anybody to read and write on github.com. So it is mandatory for your personal files to be stored offline. That is why jarve-Pocket, your either offline folder or encripted online folder. This one is for private use only.
 
-jarve-ConfigManager will tell you one way to configure your jarve-Pocket in the future
+jarve will tell you one way to configure your jarve-Pocket in the future
 
-## jarve-ConfigManager 
+## jarve 
 Repository and executables not compiled on pourpose. It sacrifices speed for learning. Newcomers to Linux can open each executable file and learn the code by reading the comments.
 
  # Description 
@@ -47,7 +47,7 @@ Try all the different distros of it while you learn Linux itself
 
 
 ## Who is Dv?
-> If you download this repository from Github, then there will be 2 users running at jarve-ConfigManager. One is jarve itself, doing the sandard for everybody. But who is everybody and how can jarve work for them specificly? Well Dv is one user of Jarve, and it works as an example of what you can do to your account too. 2 More empty users are there, Mariane and Joseph. But there content is empty.
+> If you download this repository from Github, then there will be 2 users running at jarve. One is jarve itself, doing the sandard for everybody. But who is everybody and how can jarve work for them specificly? Well Dv is one user of Jarve, and it works as an example of what you can do to your account too. 2 More empty users are there, Mariane and Joseph. But there content is empty.
 
 ## jarve-wiki
 It is the website that worjs as a GUI for jarve... at the same time, the website is an introduction to Electron (program the converts html, css, javascript into real executable)
