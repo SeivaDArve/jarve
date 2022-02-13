@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "jrv/boot/jv/jv.sh loaded"
 # Read variables
 _op=$(xdg-open)
 # Define color codes as variables:
@@ -44,10 +45,7 @@ faq-explanation
 			--faq)
 				echo "This command lists"
 			;;
-
-			*)
-			;;
-
+		esac
 	;;
 	# Display the version of jarve
 	# + features under development
@@ -179,6 +177,14 @@ faq-explanation
 	--describe)
 		# Pipes neofetch and cpufetch and uname and git global -l into a file called jv-describingMe
 	;;
+	pull)
+		echo "jv pull copies files from the system into your jv account"
+		echo "if the current user (on thr machine) matches the current user (on jarve app), then no conflict happens"
+		echo "If there is no conflict, whatever files are beeing used in the OS system will be copies to jv"
+		echo "jv copies and keeps by usage of jv pull"
+		echo "jv deploys files into the machine by jv push"
+		echo -e "\nNot ready yet"
+		
 	--author)
 		echo ""
 		echo " < --- The Author of jarve is: Seiva D'Arve --- >"
