@@ -3,9 +3,15 @@
 # stroken location at Termux
 _stroken="/data/data/com.termux/files/home/home.home/repositories/jarve/stroken"
 
+# Text Colors
+_RED=$(echo -en '\001\033[00;31m\002')
+_RESTORE=$(echo -en '\001\033[0m\002')
+
 # Jarve Alias
 echo ".jarverc loaded"
 alias la="ls -A"
+alias .="ls"
+alias ..="cd .."
 
 # Custom links to specific directories
 goto () {
@@ -46,7 +52,7 @@ alias ..="cd .."
 
 # Menu to replace git commands for simple numeric command
 g () {
-
+clear
 	case $1 in
 		0)
 			git pull
@@ -92,6 +98,7 @@ g () {
 		;;
 		*)
 cat << heredoc
+--------- git menu - page 1 ---------
 0) git pull
 1) git push
 
@@ -104,12 +111,14 @@ cat << heredoc
 7) git log
 8) git status
 9) cat stroken && git push
-
-s) Stop and exit (use also Ctrl+C)
+-------------------------------------
+m1) goto menu 1
+m2) goto menu 2
 
 heredoc
+echo ${_RED}To do something, specify an argument like \"g 2\"${_RESTORE}
 
-			echo "To do something, specify an argument like \"g 2\""
+echo -e "s) Stop and exit (use also Ctrl+C)\n"
 		;;
 
 	esac
