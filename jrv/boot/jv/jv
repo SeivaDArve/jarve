@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 echo "jrv/boot/jv/jv.sh loaded"
 # Read variables
 _op=$(xdg-open)
@@ -185,6 +186,24 @@ faq-explanation
 		echo "jv deploys files into the machine by jv push"
 		echo -e "\nNot ready yet"
 		
+	;;
+	edit)
+		case $2 in
+			jv)
+				echo "editing main jv"; read
+			;;
+			jrvrc)
+				echo "editing jrvrc at ~"; read
+			;;
+			bashrc)
+				echo "editing ~/.bashrc"; read
+			;;
+			*)
+				echo "what do you want to edit?"
+				echo "after editing anything, do not forget to pull into jarve for cloud-usage"
+			;;
+		esac
+
 	--author)
 		echo ""
 		echo " < --- The Author of jarve is: Seiva D'Arve --- >"
