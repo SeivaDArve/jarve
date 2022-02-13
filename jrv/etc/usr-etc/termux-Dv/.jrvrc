@@ -1,0 +1,117 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# stroken location at Termux
+_stroken="/data/data/com.termux/files/home/home.home/repositories/jarve/stroken"
+
+# Jarve Alias
+echo ".jarverc loaded"
+alias la="ls -A"
+
+# Custom links to specific directories
+goto () {
+
+cat << heredoc
+goto: type "goto --list" to see available links"
+heredoc
+	case $1 in
+		--list)
+			echo "it will list all goto's in the future"
+		;;
+		h)
+			cd
+		;;
+		rep)
+			cd ~/home.home/repositories
+		;;
+		drya)
+			cd  ~/home.home/repositories/DRYa
+		;;
+		jv)
+			cd ~/home.home/repositories/jarve
+		;;
+		*)
+			echo "that one does not exist, you will be able to create more in the future."
+		;;
+esac
+}
+# Read DRYa .bashrc
+
+
+
+alias ..="cd .."
+
+
+
+
+
+# Menu to replace git commands for simple numeric command
+g () {
+
+	case $1 in
+		0)
+			git pull
+		;;
+		1)
+			git push
+		;;
+		2)
+			git add .
+		;;
+		3)
+			git add . 
+			echo "enter commit message"
+			read _ans
+			git commit -m "$_ans"
+		;;
+		4)
+			git all --all
+		;;
+		5)
+			echo " We will add ALL FILES and then commit"; echo "So, press enter if you want to perform \"git add --all\""
+			read; echo "git add --all"
+			echo "What is your commit message?"
+			read _ans
+			git add --all
+			git commit -m "$_ans"
+			git status
+		;;
+		6)
+			echo "enter commit message"
+			read _ans
+			git commit -m "$_ans"
+		;;
+		7)
+			git log
+		;;
+		8)
+			git status
+		;;
+		9)
+			cat ${_stroken}
+			git push
+		;;
+		*)
+cat << heredoc
+0) git pull
+1) git push
+
+2) git add .
+3) git add . && git commit -m "..."
+4) git add --all
+5) git add --all && git commit -m "..."
+6) git commit "..."
+
+7) git log
+8) git status
+9) cat stroken && git push
+
+s) Stop and exit (use also Ctrl+C)
+
+heredoc
+
+			echo "To do something, specify an argument like \"g 2\""
+		;;
+
+	esac
+
+}
