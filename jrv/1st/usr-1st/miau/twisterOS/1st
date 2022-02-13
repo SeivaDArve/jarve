@@ -1,0 +1,22 @@
+# Title: 1st Things done to Twister OS after a fresh install
+
+xrandr -s 1360x768
+sudo apt update
+sudo apt upgrade
+sudo apt install vim
+
+# Change default password
+# By default (User: Pi | Password: raspberry)
+# By default (User: root | Password: raspberry)
+# To change Pi user password:
+passwd
+# To change root password:
+sudo -i passwd
+# Resultado: $(jarve-pocket-7dj3kd9s3k)
+
+# Install Microsoft Teams (teams-for-linux)
+sudo apt install snapd
+sudo snap install teams-for-linux
+# Snapcraft icons are located at another place, they won't show at the normal app list, to fix that, we will copy them from the original snap folder to the system app list:
+sudo cp /var/lib/snapd/desktop/applications/* /usr/share/applications/ 
+
