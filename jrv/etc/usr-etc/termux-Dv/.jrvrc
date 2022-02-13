@@ -1,17 +1,23 @@
 #!/data/data/com.termux/files/usr/bin/bash
+# Title: Place in between ~/.bashrc and jv
+# Use: use this file to keep ~/.bashrc esay to read
 
+# Sources:
 # stroken location at Termux
 _stroken="/data/data/com.termux/files/home/home.home/repositories/jarve/stroken"
 _jv_termux="/data/data/com.termux/files/home/home.home/repositories/jarve/jrv/boot/jv/jv"
 # source jv
 source $_jv_termux
 
+# Greetings: 
+echo "Hi, .jrvrc loaded"
+
 # Text Colors
 _RED=$(echo -en '\001\033[00;31m\002')
 _RESTORE=$(echo -en '\001\033[0m\002')
 
 # Jarve Alias
-echo ".jrvrc loaded"
+alias jv="bash data/data/com.termux/files/home/home.home/repositories/jarve/jrv/boot/jv/./jv"
 alias la="ls -A"
 alias .="ls"
 alias ..="cd .."

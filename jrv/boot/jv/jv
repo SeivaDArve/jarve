@@ -1,7 +1,8 @@
 #!/bin/bash
+# Title: Main jv
+# Greetings: 
+echo "Hi, jrv/boot/jv/jv.sh loaded"
 
-
-echo "jrv/boot/jv/jv.sh loaded"
 # Read variables
 _op=$(xdg-open)
 # Define color codes as variables:
@@ -203,7 +204,7 @@ faq-explanation
 				echo "after editing anything, do not forget to pull into jarve for cloud-usage"
 			;;
 		esac
-
+	;;
 	--author)
 		echo ""
 		echo " < --- The Author of jarve is: Seiva D'Arve --- >"
