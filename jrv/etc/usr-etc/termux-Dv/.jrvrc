@@ -52,7 +52,6 @@ alias ..="cd .."
 
 # Menu to replace git commands for simple numeric command
 g () {
-clear
 	case $1 in
 		0)
 			git pull
@@ -97,6 +96,7 @@ clear
 			git push
 		;;
 		*)
+clear
 cat << heredoc
 --------- git menu - page 1 ---------
 0) git pull
