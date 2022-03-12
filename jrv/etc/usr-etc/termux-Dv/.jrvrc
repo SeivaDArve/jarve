@@ -21,6 +21,7 @@ alias jv="bash data/data/com.termux/files/home/home.home/repositories/jarve/jrv/
 alias la="ls -A"
 alias .="ls"
 alias ..="cd .."
+alias cd ...="cd .. && ls"
 
 
 # Custom links to specific directories
