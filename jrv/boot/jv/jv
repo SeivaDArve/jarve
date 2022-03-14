@@ -1,7 +1,7 @@
 #!/bin/bash
 # Title: Main jv
 # Greetings: 
-echo "Hi, jrv/boot/jv/jv.sh loaded"
+echo "jv: jrv/boot/jv/jv.sh loaded"
 
 # Read variables
 _op=$(xdg-open)
@@ -47,6 +47,11 @@ faq-explanation
 			--faq)
 				echo "This command lists"
 			;;
+			--all)
+				# cats this file and greps all options and sub options. NOT READY YET
+				# cat jv | grep ")" | grep "\-\-"
+			;;
+
 		esac
 	;;
 	# Display the version of jarve
@@ -101,8 +106,13 @@ faq-explanation
 		esac
 	;;
 
+	# Source all files Jarve usually manages
+	--sourceAll)
+		source ~/.bashrc
+		#cd $_JVrepoLOCATION; cp ./jrv/etc/usr-etc/termux-Dv/.jrvrc ~; # /source "~/.jrvrc": the command "jv edit jrvrc" works only if you travel to the absolute path of the under development repository of jarve. If you set the absolute path with "jv --setRepoHere", then you can use "jv edit jrvrc" to edit the ".jrvrc" file at the original path. After any change to ".jrvrc" it makes sense to use this command "jv sourceAll" because it will copy and replace "~/.jrvrc" for the now new modified file "<path to repo>/jrv/etc/.jrvrc"
+	;;
 	# Travel to the repository for development
-	--repo)
+	--gotoRepo)
 	cd $(_jv-repo-location)
 	;;
 
@@ -156,6 +166,10 @@ faq-explanation
 	--uninstall)
 		echo "jarve will remove EVERY SINGLE THING of itself;)"
 	;;
+	--setRepoHere)
+		# Exports an env variable to tell jv what is the absolute path to the under development jarve repository. It needs you to travel to that directory first and execute this vommand there
+		# Export $pwd $_JVrepoLOCATION
+	;;
 	--setJarvePocket\<path\>)
 		echo "please enter the full path where jarve can be granted acess to your private data (jarve does not record it, and keep safe by not telling your private data with nobody"
 		echo "this tool is meant to grant jarve for example with password management. Jarve does not remember your password, it simply acesses your external USB every time you need to use it. Jarve copies the password, uses it and in the end dumps it from the temporary files"
@@ -194,12 +208,14 @@ faq-explanation
 				echo "editing main jv"; read
 			;;
 			jrvrc)
-				echo "editing jrvrc at ~"; read
+				echo "editing jrvrc at (define variable here: path to your under development repo (you can travel to that directory and type \"jv --setRepoHere\""; read
 			;;
 			bashrc)
 				echo "editing ~/.bashrc"; read
 			;;
 			*)
+				clear
+				echo -e "\"jv edit\" options:\njv\njrvrc\nbashrc\n\n"
 				echo "what do you want to edit?"
 				echo "after editing anything, do not forget to pull into jarve for cloud-usage"
 			;;
