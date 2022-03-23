@@ -1,0 +1,3 @@
+# Title: com
+# Description: Directory of communications. The app comes here to see what is actually beeing used by the system
+# Example: At any android phone, there is only one wallpaper beeing used at a time. The wallpaper that is being used at the moment by the system will be found at "com.android.wallpaper"
