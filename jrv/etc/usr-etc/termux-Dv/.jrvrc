@@ -99,30 +99,32 @@ G () {
 			git add .
 		;;
 		4)
-			echo "git add ."
-			git add . 
+			echo "git add --all"
+			git add --all
+		;;
+		5)
 			echo "In order to commit to git, what is your commit message?"
 			read _ans
 			git commit -m "$_ans"
 		;;
-		5)
-			echo "git add --all"
-			git add --all
-		;;
 		6)
+			echo "git add ."
+			git add . 
+
+			echo "In order to commit to git, what is your commit message?"
+			read _ans
+			git commit -m "$_ans"
+		;;
+		7)
 			echo "git add --all"
 			git add --all
+
 			echo "In order to commit to git, what is your commit message?"
 			read _ans
 			git commit -m "$_ans"
 
 			echo -e "\n\ngit status\n\n"
 			git status
-		;;
-		7)
-			echo "In order to commit to git, what is your commit message?"
-			read _ans
-			git commit -m "$_ans"
 		;;
 		8)
 			echo "git log"
@@ -143,11 +145,11 @@ cat << heredoc
 1) git pull
 2) git push
 3) git add .
-5) git add --all
-7) git commit "..."
+4) git add --all
+5) git commit "..."
 
-4) git add .      &&  git commit -m "..."
-6) git add --all  &&  git commit -m "..."
+6) git add .      &&  git commit -m "..."
+7) git add --all  &&  git commit -m "..."
 
 8) git log
 9) cat stroken && git push
