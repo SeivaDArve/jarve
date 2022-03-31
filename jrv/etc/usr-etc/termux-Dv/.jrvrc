@@ -99,6 +99,8 @@ G () {
 			echo "In order to commit to git, what is your commit message?"
 			read _ans
 			git commit -m "$_ans"
+
+			echo ""
 			git status
 		;;
 		6)
