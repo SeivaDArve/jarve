@@ -61,6 +61,11 @@ alias ..="cd .."
 # Menu to easyGIT to replace long git commands for one simple and short command
 G () {
 
+	# In order to use easyGIT, one way is to navigate to it's dir and from there
+	# You could type "source easyGIT". This method only works for that terminal
+	# instance and will be unavailable after you close the terminal. So, you
+	# could also add "source <relative path/easyGIT>" to your .bashrc 
+	
 	# stroken location at your Butler's Pocket (jarve-pocket in my case)
 	_stroken="/data/data/com.termux/files/home/home.home/repositories/jarve/stroken"
 
@@ -69,75 +74,85 @@ G () {
 	_RESTORE=$(echo -en '\001\033[0m\002')
 
 	function setGlobalConfigSeiva_DArve {
-		echo bla
+		echo "This will be a menu soon that can list, edit, remove... to set as global configs. For example the configurations for SeivaDArve"
 		#git config --global user.email "flowreshe.seiva.d.arve@gmail.com"
 		#git config --global user.name "SeivaDArve"
 	}
 
 	case $1 in
-		A) setGlobalConfig_SeivaDArve ;;  
-
-		0) git pull ;;
-
+		0) 
+			echo -e "git status\n"
+			git status
+		;;
 		1)
-			git push
+			echo "git pull"
+			git pull 
 		;;
 		2)
-			git add .
+
+			echo "git push"
+			git push
+
 		;;
 		3)
+			echo "git add ."
+			git add .
+		;;
+		4)
+			echo "git add ."
 			git add . 
-			echo "Enter commit message"
+			echo "In order to commit to git, what is your commit message?"
 			read _ans
 			git commit -m "$_ans"
 		;;
-		4)
-			git all --all
-		;;
 		5)
-			git add --all
 			echo "git add --all"
+			git add --all
+		;;
+		6)
+			echo "git add --all"
+			git add --all
 			echo "In order to commit to git, what is your commit message?"
 			read _ans
 			git commit -m "$_ans"
 
-			echo ""
+			echo -e "\n\ngit status\n\n"
 			git status
 		;;
-		6)
-			echo "Enter commit message"
+		7)
+			echo "In order to commit to git, what is your commit message?"
 			read _ans
 			git commit -m "$_ans"
 		;;
-		7)
-			git log
-		;;
 		8)
-			git status
+			echo "git log"
+			git log
 		;;
 		9)
 			# If you try to cat this file and it does not exist, it should mean DRYa is not installed and it should display a message TO INSTALL DRYa, so yes, easyGIT can should be able to call DRYa into de business; BTW, drya is meant to be holistic first and only then it should fit you. So in the end, easyGIT calls DRYa in order for it to call your PERSONAL credentials, it means it should read from your 'Butler-Pocket'. In my case (username: Dv) my butler is jarve, so drya would get information from my jarve-Pocket to fit me, Dv
 			cat ${_stroken}
 			git push
 		;;
+		A) setGlobalConfig_SeivaDArve ;;  
+
 		*)
 clear
 cat << heredoc
 --------- git menu - page 1 ---------
-0) git pull
-1) git push
+0) git status
+1) git pull
+2) git push
+3) git add .
+5) git add --all
+7) git commit "..."
 
-2) git add .
-3) git add . && git commit -m "..."
-4) git add --all
-5) git add --all && git commit -m "..."
-6) git commit "..."
+4) git add .      &&  git commit -m "..."
+6) git add --all  &&  git commit -m "..."
 
-7) git log
-8) git status
+8) git log
 9) cat stroken && git push
 
-A) set global configurations for SeivaDarve
+A) set global configurations for the user
 -------------------------------------
 m1) goto menu 1
 m2) goto menu 2
