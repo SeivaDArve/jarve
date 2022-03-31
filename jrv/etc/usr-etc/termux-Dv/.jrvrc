@@ -60,12 +60,24 @@ alias ..="cd .."
 
 
 
-# Menu to replace git commands for simple numeric command
-g () {
+# Menu to easyGIT to replace long git commands for one simple and short command
+G () {
+
+	# Text Colors
+	_RED=$(echo -en '\001\033[00;31m\002')
+	_RESTORE=$(echo -en '\001\033[0m\002')
+
+	function setGlobalConfigSeiva_DArve {
+		echo bla
+		#git config --global user.email "flowreshe.seiva.d.arve@gmail.com"
+		#git config --global user.name "SeivaDArve"
+	}
+
 	case $1 in
-		0)
-			git pull
-		;;
+		A) setGlobalConfig_SeivaDArve ;;  
+
+		0) git pull ;;
+
 		1)
 			git push
 		;;
@@ -82,11 +94,10 @@ g () {
 			git all --all
 		;;
 		5)
-			echo " We will add ALL FILES and then commit"; echo "So, press enter if you want to perform \"git add --all\""
-			read; echo "git add --all"
-			echo "What is your commit message?"
-			read _ans
 			git add --all
+			echo "git add --all"
+			echo "In order to commit to git, what is your commit message?"
+			read _ans
 			git commit -m "$_ans"
 			git status
 		;;
@@ -121,12 +132,14 @@ cat << heredoc
 7) git log
 8) git status
 9) cat stroken && git push
+
+A) set global configurations for SeivaDarve
 -------------------------------------
 m1) goto menu 1
 m2) goto menu 2
 
 heredoc
-echo ${_RED}To do something, specify an argument like \"g 2\"${_RESTORE}
+echo ${_RED}To do something, specify an argument like \"G 2\"${_RESTORE}
 
 echo -e "s) Stop and exit (use also Ctrl+C)\n"
 		;;
