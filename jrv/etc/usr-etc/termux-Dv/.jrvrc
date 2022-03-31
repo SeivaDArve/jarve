@@ -3,8 +3,6 @@
 # Use: use this file to keep ~/.bashrc esay to read
 
 # Sources:
-# stroken location at Termux
-_stroken="/data/data/com.termux/files/home/home.home/repositories/jarve/stroken"
 _jv_termux="/data/data/com.termux/files/home/home.home/repositories/jarve/jrv/boot/jv/jv"
 # source jv
 source $_jv_termux
@@ -63,6 +61,9 @@ alias ..="cd .."
 # Menu to easyGIT to replace long git commands for one simple and short command
 G () {
 
+	# stroken location at your Butler's Pocket (jarve-pocket in my case)
+	_stroken="/data/data/com.termux/files/home/home.home/repositories/jarve/stroken"
+
 	# Text Colors
 	_RED=$(echo -en '\001\033[00;31m\002')
 	_RESTORE=$(echo -en '\001\033[0m\002')
@@ -115,6 +116,7 @@ G () {
 			git status
 		;;
 		9)
+			# If you try to cat this file and it does not exist, it should mean DRYa is not installed and it should display a message TO INSTALL DRYa, so yes, easyGIT can should be able to call DRYa into de business; BTW, drya is meant to be holistic first and only then it should fit you. So in the end, easyGIT calls DRYa in order for it to call your PERSONAL credentials, it means it should read from your 'Butler-Pocket'. In my case (username: Dv) my butler is jarve, so drya would get information from my jarve-Pocket to fit me, Dv
 			cat ${_stroken}
 			git push
 		;;
