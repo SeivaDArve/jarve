@@ -181,7 +181,7 @@ G () {
 			# Inform that this menu is under construction:
 			echo -e "$(tput setaf 3)\n  menu under construction;)\n${RESTORE}"; read; G
 		;;
-		S) # Option: Stop
+		S) # Option: Stop and Clear the screen from this menu
 
 			clear
 			tput setaf 3
@@ -214,8 +214,8 @@ m1) goto menu 1
 m2) goto menu 2
 
 heredoc
+			echo -e "S) Stop and Clear the screen from this menu\n"
 			echo ${_RED}To do something, specify an argument like \"G 2\"${_RESTORE}
-			echo -e "S) Stop and exit (use also Ctrl+C)\n"
 		;;
 
 	esac
