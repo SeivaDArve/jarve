@@ -1,0 +1,18 @@
+while coding in bash, functuons cannit be filled only with comments, they must have somethind inside to be ran
+
+example of error:
+
+function f_test {
+	#_color1=red
+	#_color2=green
+}
+
+code without error:
+
+function f_test {
+	#_color1=red
+	_color2=green
+}
+
+
+https://www.howtogeek.com/439199/15-special-characters-you-need-to-know-for-bash/
