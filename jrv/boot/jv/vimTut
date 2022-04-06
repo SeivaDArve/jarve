@@ -1,0 +1,6 @@
+no vim, quando em Normal Mode, se navegares para cima de uma funcao e clicares no arterisco, ele navega para o local onde essa funcao é chamada (#). Pelo menos em Bash
+
+function f_menu {
+	echo bla bla
+}
+f_menu

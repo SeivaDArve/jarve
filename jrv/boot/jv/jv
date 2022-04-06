@@ -1,33 +1,90 @@
 #!/bin/bash
 # Title: Main jv
-# Greetings: 
-echo "jv: jrv/boot/jv/jv.sh loaded"
 
-# Read variables
-_op=$(xdg-open)
-# Define color codes as variables:
-# _color-1=...
-# _color-2=...
-# _color-3=...
-# _color-4=...
-# _color-5=...
-# _color-6=...
-# _color-7=...
-# _color-8=...
-# _color-9=...
-# _color-10=...
+# Fist of all, saving arguments as variables to force Bash to run cascading functions. (For better debugging process). Example: "$bash jv arg1 arg2 arg3 arg4 arg5". No other command can run before this.
+# arg1 = $1
+_1=$1	# "$jv arg1"
+_2=$2	# "$jv ... arg2"
+_3=$3	# "$jv ... ... arg3"
+_4=$4 	# "$jv ... ... ... $4"
+_5=$5	# "$jv ... ... ... ... $5"
+
+function f_flagDetect {
+	# At this function we detect if the first argument sent to jv is a flag. To be a flag it has to start with a "-". Example: "$jv -h"
+	echo "The argument given was $_1"
+
+	if [[ $_1 =~ ^- ]]; then
+		echo it is a flag
+	fi
+		
+	if [[ $_1 =~ ^-- ]]; then
+		echo it is a double flag
+	fi
 
 
-# Arguments:
-# When "jv" is asked at the terminal
-# it expects argument. Type "jv -l" to list
-# all possibilities.
-# (examples: "jv -l", "jv --version"):
-case $1 in
+	function f_test {
+		# Test if a string has a substring
+		# If you prefer the regex approach:
+		string='My string';
+		
+		if [[ $string =~ "My" ]]; then
+   		echo "It's there!"
+		fi
+	}
+	#f_test
+}
 
-	"--faq")
+function f_greetings {
+	# Tell the user that this script was executed
+	echo "loaded: jv (at: ...jarve/jrv/boot/jv/jv"
+}
 
-cat << faq-explanation
+function f_colors {
+	# Define color codes as variables:
+	# _color-1=...
+	# _color-2=...
+	# _color-3=...
+	# _color-4=...
+	# _color-5=...
+	# _color-6=...
+	# _color-7=...
+	# _color-8=...
+	# _color-9=...
+	_color-10=o
+}
+
+function f_alias {
+	# Read variables
+	_op=$(xdg-open)
+}
+
+function f_jrvrc {
+	# jrvrc is a command to manipulate .jrvrc file
+	# This file is used to leave ~/.bashrc clean
+	# When jarve wants to use ~/.bashrc it uses .jrvrc instead and adds a command inside ~/.bashrc to go get this file. The command is "source .../jrv/etc/.../.jrvrc
+	echo "editing jrvrc at (define variable here: path to your under development repo (you can travel to that directory and type \"jv --setRepoHere\""; read
+}
+
+function f_vimrc {
+	# vimrc is an argument to manipulate .vimrc file
+	_var=0
+
+	clear
+	tput cup 0 2 
+	cat ./jv
+}
+
+function f_jv {
+	# Arguments:
+	# When "jv" is asked at the terminal
+	# it expects argument. Type "jv -l" to list
+	# all possibilities.
+	# (examples: "jv -l", "jv --version"):
+	case $_1 in
+	
+		"--faq")
+	
+	cat << faq-explanation
 
 Before running any command, redirect it to --faq to know what it does, it is a live assistant. Use it as a break pedal that tells you at what point you are (what your expression currently does) and where you may go (faq displays what arguments you could use next). --faq allows you to know that arguments you may add.
 --faq is help on-the-go instead of help as a document
@@ -151,6 +208,7 @@ faq-explanation
 		esac
 	;;
 	--detectOS)
+		# drya also has this option. To improve this code, go check it out
 		echo "jarve is detecting current OS and writting it on ~/.jarve/var/var_current-OS"
 	;;
 	--home)
@@ -208,14 +266,19 @@ faq-explanation
 				echo "editing main jv"; read
 			;;
 			jrvrc)
-				echo "editing jrvrc at (define variable here: path to your under development repo (you can travel to that directory and type \"jv --setRepoHere\""; read
+				# Execute this function:
+				f_jrvrc
 			;;
 			bashrc)
 				echo "editing ~/.bashrc"; read
 			;;
+			vimrc)
+				# Execute this function:
+				f_vimrc
+			;;
 			*)
 				clear
-				echo -e "\"jv edit\" options:\njv\njrvrc\nbashrc\n\n"
+				echo -e "\"jv edit\" options:\njv\njrvrc\nbashrc\nvimrc\n"
 				echo "what do you want to edit?"
 				echo "after editing anything, do not forget to pull into jarve for cloud-usage"
 			;;
@@ -232,4 +295,16 @@ faq-explanation
 	;;
 esac
 
+}
 
+function f_--all {
+	echo hi
+}
+
+function f_exec {
+	#f_greetings
+	#f_--all
+	f_flagDetect
+	f_jv
+}
+f_exec
