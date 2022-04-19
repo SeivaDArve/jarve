@@ -5,5 +5,5 @@ echo "This bash script is meant to tell when SeivaDArve started to learn Linux a
 #I will not count many many years of experience with Linux Live Distros to un-fuck my windows
 #I will only count since my Github.com SignUp
 
-echo "--> Started intense learning at March 25th"
+echo "--> Started intense learning at March 25th, 2021"
 
