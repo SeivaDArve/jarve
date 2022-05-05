@@ -1,11 +1,34 @@
-# jarve (by Seiva D'Arve)
+# Jarve 
+When you have to much stuff to do and worry about: Automate stuff. jarve is my personal butler
 
+
+# Table of Contents
+[Indroduction](#Introduction)
+[Instalation](#Instalation)
+[Roadmap](#Roadmap)
+[Author](#Author)
+
+## Introduction
+DRY: Don't repeat yourself
 Dv applying DRY results in Jarve: a Butler
 Call for jv in the terminal an see what he Replies
 
+Solid/Unchanging configs are saved into "drya" (another Seiva's repository)
+Personal Assistance On-the-go is saved and managed at "jarve" (this repository)
+
+If I install this app, my life MUST become lighter, automated and easy, otherwise there is no purpouse
+
+## Instalation
 He talks the Lachine-Manguage
 
 A perfect tringle: ***jarve*** + ***jarve-Wiki*** + ***jarve-Pocket***
+
+## Roadmap
+This roadmap is a list of features yet to include to the repo
+
+- device-recognition		[queued]
+- browser-bookmark-Manager	[queued]
+- schedule-automatic-sms 	[queued]
 
 ## jarve-Wiki 
 #### Ask jarve for instructions
@@ -273,8 +296,9 @@ https://pandoc.org/MANUAL.html#pandocs-markdown
 
 <br>
 
+# Author
 ##### Congratulations to our 150 first developers;)
-# By Seiva D'Arve :D
+##### By Seiva D'Arve :D
 
 ![](./all/Pixels/user-icons/SeivaDArve/1x1-roundPNG.png)
 
