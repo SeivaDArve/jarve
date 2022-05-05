@@ -3,10 +3,10 @@ When you have to much stuff to do and worry about: Automate stuff. jarve is my p
 
 
 # Table of Contents
-[Indroduction](#Introduction)
-[Instalation](#Instalation)
-[Roadmap](#Roadmap)
-[Author](#Author)
+- [Indroduction](#Introduction)
+ - [Instalation](#Instalation)
+ - [Roadmap](#Roadmap)
+ - [Author](#Author)
 
 ## Introduction
 DRY: Don't repeat yourself
