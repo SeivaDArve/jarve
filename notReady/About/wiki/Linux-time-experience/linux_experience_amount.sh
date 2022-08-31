@@ -7,3 +7,4 @@ echo "This bash script is meant to tell when SeivaDArve started to learn Linux a
 
 echo "--> Started intense learning at March 25th, 2021"
 
+#Just as curiosity: I started learni g Linux because I found the best way to get into the deep web and it was called TAILS OS. From that point, many things unfolded
