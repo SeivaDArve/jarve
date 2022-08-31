@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "This bash script is meant to tell when SeivaDArve started to learn Linux and how much time passed so far"
+echo "This bash script is meant to tell when Seiva D'Arve started to learn Linux and how much time passed so far"
 
 #I will not count many many years of experience with Linux Live Distros to un-fuck my windows
 #I will only count since my Github.com SignUp
