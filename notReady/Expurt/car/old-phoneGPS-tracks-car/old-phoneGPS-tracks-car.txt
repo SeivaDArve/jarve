@@ -1,0 +1,4 @@
+Create an app using kotlin to enable GPS auyomatically and internet (either by internet command or sms command) and apply this script to an old phone.
+this old phone can now be hidden in my car... whenever it is stolen, the script will definitly find it
+
+Dev: all a function to test every day if this sxript works or not. if for 2 days it does not work, jarve will detect the lack of response
