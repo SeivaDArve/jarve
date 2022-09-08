@@ -1,0 +1,24 @@
+# Title: Version of the software
+# Description: This branch of the software is at a certain version and this file at its root directory indicates which version
+# Version: Beta (Not yet released 1 full version)
+# Other existing branches so far: None
+
+# ToDo list to transcend to the next version:
+# +
+# +
+# +
+
+# List of what is lacking at this version to transcend to the next version:
+	- installed OS at this machine (jarve is an user account at home pc)
+	- added: ssh daemon configuration at jarve (OS installed at raspbery pi)
+	- At home, jv.sh as soon as it is installed on the machine and started up, it reads the hour of the day. Why? because there may be a lot of "TODOs" in your list that you may want jarve to remind you of certain things only at certain hours. 
+		Example 1: Things you can do only after work and after arriving home, you want jarve to remind you only between 17h00 and 00h00.  
+		Ecample 2: In a year, the time clock is changed twice. Jarve shpuld remind you of that
+	- There are things you are currently trying to learn, right? aren't you trynig to learn any language? Jarve can go on displaying imagens of written words to translate all day long
+
+
+
+Version Log (contents of each version) {
+	Version 1 {
+	}
+}

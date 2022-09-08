@@ -1,0 +1,3 @@
+create a file jarve-daemon.service to connect to the internet always
+
+this way, you can use apps like Any Desk from your android with raspberry pi (which is using this daemon) and this way... your phone is extended to be a cloud computer
